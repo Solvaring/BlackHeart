@@ -15,7 +15,7 @@ targetarrayb = []
 referenced matches the pixel being checked against in main loop"""
 if condition == "Y":
     for i in xrange(110):
-        targetarrayr.append(ImageGrab.grab().getpixel((1702, 1086))[0])
+        targetarrayr.append(ImageGrab.grab().getpixel((1276.5, 814.5))[0])
         #targetarrayg.append(ImageGrab.grab().getpixel((1702, 1086))[1])
         #targetarrayb.append(ImageGrab.grab().getpixel((1702, 1086))[2])
     """Grab the smallest red color value, this is the value
@@ -37,7 +37,7 @@ the middle, then send a period to disengage mouse cursor mode before sending
 the 'e' key to reel in. Finally, wait 2 and a half seconds."""
 #time_start = time.time()
 while 1:
-    targetpixel =  ImageGrab.grab().getpixel((1702, 1086))
+    targetpixel =  ImageGrab.grab().getpixel((1276.5, 814.5))
     time.sleep(.5)
     if targetpixel[pos] < int(polled_value):
         if win32gui.GetForegroundWindow() != handle:
