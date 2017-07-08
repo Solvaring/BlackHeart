@@ -43,7 +43,7 @@ while 1:
         if win32gui.GetForegroundWindow() != handle:
             win32gui.SetForegroundWindow(handle)
             targetwin = controls.AnimationWrapper(handle)
-            targetwin.ClickInput(button="left", coords=(960, 540), 
+            targetwin.ClickInput(button="left", coords=(1280, 720), 
                                 double=False, 
                                 wheel_dist=0, 
                                 use_log=False, 
